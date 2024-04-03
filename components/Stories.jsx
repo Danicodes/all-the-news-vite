@@ -1,9 +1,9 @@
 import Story from "./Story"
 
-const Stories = (props) => {
+const Stories = ( { stories }) => {
     return (
         <div className="site-wrap">
-            {props.stories.map((story, index) => (
+            {stories.map((story, index) => (
                 <Story key={index} story={story}></Story>
             ))}
             {/* <pre><code>{JSON.stringify(props.stories, null, 2)}</code></pre> */}
